@@ -129,6 +129,8 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 1rem;
 }
 header > a > img {
     height: 20px;
