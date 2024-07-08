@@ -16,6 +16,9 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
+    margin: 0;
 }
 
 .main-container {
@@ -35,6 +38,7 @@ a {
     font-size: 22px;
 }
 
+/****** Card ***********/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -121,6 +125,39 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Header ***********/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header > a > img {
+    height: 20px;
+    padding: 30px 50px;
+}
+
+header > nav {
+    display: flex;
+}
+header > nav > a {
+    font-weight: 400; 
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: bottom;
+    margin: 0 1rem;
+}
+header > nav > a.active {
+    box-shadow: 0 2px 0 var(--main-color) inset,
+                0 0 0 #000 inset;
+    color: var(--main-color);
+}
+
+
+/****** Footer ***********/
+footer {
+    margin-top: 2rem;
+    background-color: var(--main-bg-color);
+}
 
 
 
