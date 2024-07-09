@@ -26,6 +26,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    align-self: center;
 }
 
 a {
@@ -235,12 +236,22 @@ footer {
 
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+footer ul {
+    list-style-type: none;
+    padding: 20px;
+}
+footer li:first-child { 
+    margin-top: 15px;  
+}
+footer li:not(:last-child) { 
+    margin-bottom: 15px;  
 }
 footer ul:before{
-    content:attr(aria-label);
-    font-size:120%;
-    font-weight:bold;
-    margin-left:-15px;
+    content: attr(aria-label);
+    font-weight: 700;
+    margin-bottom: 15px; 
 }
 
 
@@ -285,6 +296,7 @@ footer ul:before{
     min-width: 50px;
     border-radius: 15px;
     background-color: var(--main-color);
+    transform: translateX(-15px);
 }
 
 /****** Filters ***********/
@@ -378,6 +390,9 @@ footer ul:before{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .main-container {
+        padding: 0 20px;
+    }
 
     header {
         flex-direction: column;
@@ -422,8 +437,10 @@ footer ul:before{
 
     footer {
         flex-direction: column;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 30px;
     }
-
 
     .d-none-mobile {
         display: none;
