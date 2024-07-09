@@ -389,6 +389,16 @@ footer {
                     0 0 0 #000 inset;
     }
 
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .populaires a {
+        width: 100%;
+    }
+    
+
     .activites-cards {
         grid-template: ".";
         gap: 15px;
