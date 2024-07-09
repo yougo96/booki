@@ -26,28 +26,32 @@
 
         <main class="main-container">
 
-            <h2 style="margin-bottom: 0.5rem;">Trouvez votre hébergement pour des vacances de rêve</h2>
-            <span>En plein centre-ville ou en pleine nature</span>
-            
-            <div class="searchbar">
-                <span class="searchbar-1"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
-                <input class="searchbar-2" value="Marseille, France" type="text"></input>
-                <span class="searchbar-3-icon d-none d-mobile"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span>
-                <span class="searchbar-3-text d-none-mobile"><h3>Rechercher</h3></span>
+            <div class="hero">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <span>En plein centre-ville ou en pleine nature</span>
             </div>
+            
+            <form action="" class="searchbar">
+                <span class="searchbar-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                <input class="searchbar-input" name="searchinput" value="Marseille, France" type="text"></input>
+                <button type="submit" class="searchbar-button searchbar-button-icon d-none d-mobile"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                <button type="submit" class="searchbar-button searchbar-button-text d-none-mobile"><h3>Rechercher</h3></button>
+            </form>
 
             <div class="filter">
                 <span>Filtres</span>
                 <br class="d-none d-tablet">
                 <ul>
-                    <li> <i class="fa-solid fa-color-main fa-magnifying-glass" aria-hidden="true"></i> &nbsp; <span>Économique</span> </li>
+                    <li> <i class="fa-solid fa-color-main fa-money-bill-wave" aria-hidden="true"></i> &nbsp; <span>Économique</span> </li>
                     <li> <i class="fa-solid fa-color-main fa-person" aria-hidden="true"></i> &nbsp; <span>Familial</span> </li>
                     <li> <i class="fa-solid fa-color-main fa-heart" aria-hidden="true"></i> &nbsp; <span>Romantique</span> </li>
                     <li> <i class="fa-solid fa-color-main fa-fire" aria-hidden="true"></i> &nbsp; <span>Nos Pépites</span> </li>
                 </ul>
             </div>
 
-            <p><i class="fa-solid fa-color-main fa-circled fa-info" aria-hidden="true"></i> &nbsp; <span>Plus de 500 logements sont disponibles dans cette ville</span></p>
+            <div class="hero">
+                <i class="fa-solid fa-color-main fa-circled fa-info" aria-hidden="true"></i> &nbsp; <span>Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
 
             <div class="hebergements-and-populaires">
 

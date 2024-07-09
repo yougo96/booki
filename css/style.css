@@ -45,6 +45,13 @@ body {
     align-self: center;
 }
 
+.hero {
+    margin: var(--spacing-medium) 0;
+}
+.hero > * {
+    margin-bottom: calc(var(--spacing-small) /2);
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -97,7 +104,7 @@ br {
 /****** Activites ***********/
 .activites {
     padding: var(--spacing-medium);
-    margin-top: var(--spacing-large);
+    margin-top: var(--spacing-medium);
 }
 
 .activites-cards {
@@ -226,8 +233,6 @@ br {
 header {
     display: flex;
     justify-content: space-between;
-
-    margin-bottom: var(--spacing-small);
 }
 header > a > img {
     height: 20px;
@@ -283,44 +288,48 @@ footer ul:before{
     display: flex;
 
     height: 50px;
-    margin: var(--spacing-small) 0;
+    margin: var(--spacing-medium) 0;
 }
-
 .searchbar > *  {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.searchbar > .searchbar-1 {
+.searchbar > .searchbar-icon {
     width: 50px;
     border-radius: var(--borderraduis-small) 0 0 var(--borderraduis-small);
     background-color: var(--main-bg-color);
 }
-.searchbar > .searchbar-2 {
+.searchbar > .searchbar-input {
     border: thin solid var(--main-bg-color);
     font-size: 1.17rem;
     font-weight: 700;
-    padding-left: 1rem;
+    padding-left: var(--spacing-small);
+    min-width: var(--spacing-large);
 }
-.searchbar > .searchbar-2:focus-visible {
+.searchbar > .searchbar-input:focus-visible {
     outline: 0;
     background-color: var(--filter-bg-color);
 }
-.searchbar > .searchbar-3-text {
+.searchbar > .searchbar-button {
     color: white;
     min-width: 50px;
+    background-color: var(--main-color);
+    border: 0;
+    cursor: pointer;
+}
+.searchbar > .searchbar-button:focus {
+    outline: thick solid color-mix(in srgb, var(--main-color), transparent 66%);
+}
+.searchbar > .searchbar-button-text {
     border-radius: 0px var(--borderraduis-small) var(--borderraduis-small) 0px;
-    background-color: var(--main-color);
-    padding: 0 1rem;
+    padding: 0 var(--spacing-small);
 }
-.searchbar > .searchbar-3-icon {
-    color: white;
-    min-width: 50px;
+.searchbar > .searchbar-button-icon {
     border-radius: var(--borderraduis-small);
-    background-color: var(--main-color);
-    transform: translateX(var(--borderraduis-small));
+    transform: translateX( calc(var(--borderraduis-small) * -1 ));
 }
+
 
 /****** Filters ***********/
 .filter {
@@ -328,14 +337,14 @@ footer ul:before{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    margin: var(--spacing-small) 0;    
+    margin: var(--spacing-medium) 0;    
 }
-.filter > span {
+.filter span {
     font-size: 1.17rem;
     font-weight: 700;
     margin-right: var(--spacing-small);
 }
-.filter > ul {
+.filter ul {
     list-style-type: none;
     display: inline-flex;
     flex-wrap: wrap;
@@ -346,14 +355,15 @@ footer ul:before{
 
     max-width: 80vw;
 }
-.filter > ul > li {
+.filter li {
     border: medium solid var(--main-bg-color);
     border-radius: var(--borderraduis-medium);
     padding: 8px var(--spacing-small);
     display: inline-flex;
     font-weight: 700;
+    align-items: center;
 }
-.filter > ul > li:hover {
+.filter li:hover {
     background-color: var(--filter-bg-color);
     cursor: pointer;
 }
@@ -370,13 +380,13 @@ footer ul:before{
         flex-direction: column;
     }
     .hebergements {
-        margin-top: var(--spacing-large);
+        margin-top: var(--spacing-medium);
         width: 100%;
     }
 
     .populaires {
         width: 100%;
-        margin-top: var(--spacing-large);
+        margin-top: var(--spacing-medium);
     }
     .populaires-cards {
         display: flex;
