@@ -46,7 +46,7 @@ body {
 }
 
 .hero {
-    margin: var(--spacing-medium) 0;
+    margin-top: var(--spacing-medium);
 }
 .hero > * {
     margin-bottom: calc(var(--spacing-small) /2);
@@ -296,13 +296,13 @@ footer ul:before{
     justify-content: center;
 }
 .searchbar > .searchbar-icon {
-    width: 50px;
+    min-width: 50px;
     border-radius: var(--borderraduis-small) 0 0 var(--borderraduis-small);
     background-color: var(--main-bg-color);
 }
 .searchbar > .searchbar-input {
     border: thin solid var(--main-bg-color);
-    font-size: 1.17rem;
+    font-size: 18px;
     font-weight: 700;
     padding-left: var(--spacing-small);
     min-width: var(--spacing-large);
@@ -339,7 +339,7 @@ footer ul:before{
     align-items: center;
     margin: var(--spacing-medium) 0;    
 }
-.filter span {
+.filter > span {
     font-size: 1.17rem;
     font-weight: 700;
     margin-right: var(--spacing-small);
@@ -362,6 +362,8 @@ footer ul:before{
     display: inline-flex;
     font-weight: 700;
     align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
 }
 .filter li:hover {
     background-color: var(--filter-bg-color);
@@ -444,6 +446,23 @@ footer ul:before{
     header > nav > a.active {
         box-shadow: 0 -2px 0 var(--main-color) inset,
                     0 0 0 #000 inset;
+    }
+
+    .searchbar {
+        margin-right: calc(var(--borderraduis-small) * -1);
+    }
+    .searchbar input {
+        width: 100%;
+    }
+
+    .filter ul {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-column-gap: calc(var(--spacing-small) / 2);
+        min-width: 100%;
+    }
+    .filter li {
+        font-size: smaller;
     }
 
     .populaires {
