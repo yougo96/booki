@@ -47,6 +47,7 @@ body {
 
 .hero {
     margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-small);
 }
 .hero > * {
     margin-bottom: calc(var(--spacing-small) /2);
