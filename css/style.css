@@ -85,20 +85,33 @@ br {
     width: 65%;
 }
 
+.hebergements-cards {
+    display: grid;
+    grid-template: ". . .";
+    gap: 30px;
+}
+
+.hebergements-cards .card {
+    flex-direction: column;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-}
-
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
 }
 
 .populaires-cards img {
@@ -117,16 +130,29 @@ br {
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+/****** Card containers ***********/
+
+.populaires-title, .hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card, .hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards .card-title, .hebergements-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cards .card-subtitle, .hebergements-cards .card-subtitle {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires-cards .card-rating, .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
 
@@ -188,10 +214,14 @@ footer {
     background-color: var(--main-bg-color);
 }
 .searchbar > .searchbar-2 {
-    border: 1px solid var(--main-bg-color);
+    border: thin solid var(--main-bg-color);
     font-size: 1.17rem;
     font-weight: 700;
     padding-left: 1rem;
+}
+.searchbar > .searchbar-2:focus-visible {
+    outline: 0;
+    background-color: #DEEBFF;
 }
 .searchbar > .searchbar-3-text {
     color: white;
@@ -285,6 +315,7 @@ footer {
 
     .filter > span {
         margin-bottom: 1rem;
+        width: 100%;
     }
 
     .d-none-tablet {
@@ -316,6 +347,11 @@ footer {
     header > nav > a.active {
         box-shadow: 0 -2px 0 var(--main-color) inset,
                     0 0 0 #000 inset;
+    }
+
+    .hebergements-cards {
+        grid-template: ".";
+        gap: 15px;
     }
 
 
