@@ -68,19 +68,17 @@ br {
 
 .card-title {
     font-size: 16px;
-
-    
-    /* display: block; */
+}
+/* .hebergements .card-title {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-.card-subtitle {
-    /* display: block; */
+} 
+.hebergements .card-subtitle {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
+} */
 
 .euro {
     font-weight: 700;
@@ -112,11 +110,11 @@ br {
 }
 
 .activites-cards .card-content {
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    padding: 20px 19px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -140,15 +138,24 @@ br {
 .hebergements-cards {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-auto-rows: 1fr;
+
     grid-column-gap: 30px;
+}
+
+.hebergements-cards a {
+    flex-direction: column;
+    height: 100%;
 }
 
 .hebergements-cards .card {
     flex-direction: column;
+    height: calc(100% - 33px);
 }
 
 .hebergements-cards img {
     width: 100%;
+    min-height: 124px;
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
@@ -159,6 +166,8 @@ br {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    min-height: 73px;
+    height: 100%;
 }
 
 /****** Populaires ***********/
