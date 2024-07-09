@@ -59,13 +59,13 @@ br {
     font-size: 16px;
 
     
-    display: block;
+    /* display: block; */
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 .card-subtitle {
-    display: block;
+    /* display: block; */
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -86,7 +86,7 @@ br {
 
 .activites-cards {
     display: grid;
-    grid-template: ". . . .";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-column-gap: 30px;
 }
 
@@ -128,7 +128,7 @@ br {
 
 .hebergements-cards {
     display: grid;
-    grid-template: ". . .";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-column-gap: 30px;
 }
 
@@ -232,6 +232,15 @@ header > nav > a.active {
 footer {
     margin-top: 2rem;
     background-color: var(--main-bg-color);
+
+    display: flex;
+    flex-direction: row;
+}
+footer ul:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-15px;
 }
 
 
@@ -400,15 +409,19 @@ footer {
     
 
     .activites-cards {
-        grid-template: ".";
+        grid-template-columns: minmax(0, 1fr);
         gap: 15px;
     }
     .activites-cards img {
         height: 141px;
     }
     .hebergements-cards {
-        grid-template: ".";
+        grid-template-columns: minmax(0, 1fr);
         gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 
 
