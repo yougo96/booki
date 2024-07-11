@@ -12,8 +12,8 @@
     --spacing-medium: 33px;
     --spacing-large: 50px;
 
-    --borderraduis-medium: 20px;
-    --borderraduis-small: 15px;
+    --borderradius-medium: 20px;
+    --borderradius-small: 15px;
 }
 
 /****** General ***********/
@@ -24,7 +24,7 @@
 
 .fa-circled {
     border: thin solid var(--main-bg-color);
-    border-radius: var(--borderraduis-medium);
+    border-radius: var(--borderradius-medium);
     height: 24px;
     width: 24px;
     display: inline-flex;
@@ -76,7 +76,7 @@ br {
 /****** Card ***********/
 .card {
     background-color: white;
-    border-radius: var(--borderraduis-medium);
+    border-radius: var(--borderradius-medium);
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     display: flex;
@@ -128,7 +128,7 @@ br {
 .activites .section-cards img {
     width: 100%;
     height: 380px;
-    border-radius: var(--borderraduis-medium) var(--borderraduis-medium) 0 0;
+    border-radius: var(--borderradius-medium) var(--borderradius-medium) 0 0;
 }
 .activites .section-cards .card-content {
     padding: var(--spacing-small);
@@ -141,7 +141,7 @@ br {
 }
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: var(--borderraduis-medium);
+    border-radius: var(--borderradius-medium);
     padding: var(--spacing-medium);
     box-sizing: border-box;
 }
@@ -160,7 +160,7 @@ br {
     width: 100%;
     min-height: 124px;
     height: 124px;
-    border-radius: var(--borderraduis-medium) var(--borderraduis-medium) 0 0;
+    border-radius: var(--borderradius-medium) var(--borderradius-medium) 0 0;
 }
 .hebergements .section-cards .card-content {
     padding-left: var(--spacing-small);
@@ -174,8 +174,8 @@ br {
 .populaires .section-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: var(--borderraduis-medium);
-    border-bottom-left-radius: var(--borderraduis-medium);
+    border-top-left-radius: var(--borderradius-medium);
+    border-bottom-left-radius: var(--borderradius-medium);
 }
 .populaires .section-cards .card-content {
     width: 67%;
@@ -259,7 +259,7 @@ footer ul:before{
 }
 .searchbar > .searchbar-icon {
     min-width: 50px;
-    border-radius: var(--borderraduis-small) 0 0 var(--borderraduis-small);
+    border-radius: var(--borderradius-small) 0 0 var(--borderradius-small);
     background-color: var(--main-bg-color);
 }
 .searchbar > .searchbar-input {
@@ -284,12 +284,12 @@ footer ul:before{
     outline: thick solid color-mix(in srgb, var(--main-color), transparent 66%);
 }
 .searchbar > .searchbar-button-text {
-    border-radius: 0px var(--borderraduis-small) var(--borderraduis-small) 0px;
+    border-radius: 0px var(--borderradius-small) var(--borderradius-small) 0px;
     padding: 0 var(--spacing-small);
 }
 .searchbar > .searchbar-button-icon {
-    border-radius: var(--borderraduis-small);
-    transform: translateX( calc(var(--borderraduis-small) * -1 ));
+    border-radius: var(--borderradius-small);
+    transform: translateX( calc(var(--borderradius-small) * -1 ));
 }
 
 
@@ -319,7 +319,7 @@ footer ul:before{
 }
 .filter li {
     border: medium solid var(--main-bg-color);
-    border-radius: var(--borderraduis-medium);
+    border-radius: var(--borderradius-medium);
     padding: 8px var(--spacing-small);
     display: inline-flex;
     font-weight: 700;
@@ -409,7 +409,7 @@ footer ul:before{
     }
 
     .searchbar {
-        margin-right: calc(var(--borderraduis-small) * -1);
+        margin-right: calc(var(--borderradius-small) * -1);
     }
     .searchbar input {
         width: 100%;
