@@ -72,6 +72,10 @@ br {
     margin: 0;
     font-size: 22px;
 }
+.section-link > * {
+    margin-bottom: 0;
+    margin-top: 2.5rem;
+}
 
 /****** Card ***********/
 .card {
@@ -430,9 +434,7 @@ footer ul:before{
         border-radius: 0 !important;
     }
     .populaires .section-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        grid-template-columns: minmax(0, 1fr);
     }
     .populaires a {
         width: 100%;
@@ -459,7 +461,7 @@ footer ul:before{
 
     footer {
         flex-direction: column;
-        padding: var(--spacing-large);
+        padding: var(--spacing-medium);
     }
 
     .d-none-mobile {
