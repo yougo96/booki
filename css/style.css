@@ -17,11 +17,9 @@
 }
 
 /****** General ***********/
-
 .fa-color-main {
     color: var(--main-color);
 }
-
 .fa-circled {
     border: thin solid var(--main-bg-color);
     border-radius: var(--borderradius-medium);
@@ -285,11 +283,15 @@ footer ul:before{
     cursor: pointer;
 }
 .searchbar > .searchbar-button:focus {
-    outline: thick solid color-mix(in srgb, var(--main-color), transparent 66%);
+    /* outline: thick solid color-mix(in srgb, var(--main-color), transparent 66%); */
+    outline: thick solid #0065fc66;
 }
 .searchbar > .searchbar-button-text {
     border-radius: 0px var(--borderradius-small) var(--borderradius-small) 0px;
     padding: 0 var(--spacing-small);
+
+    font-weight: 700;
+    font-size: 18px;
 }
 .searchbar > .searchbar-button-icon {
     border-radius: var(--borderradius-small);

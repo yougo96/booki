@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
         <header>
-            <a href="#"><img src="images\logo\Booki.png" alt="logo"></a>
+            <a href="#"><img src="./images/logo/Booki.png" alt="logo"></a>
             
             <nav>
                 <a href="#hebergements" class="active">Hébergements</a>
@@ -32,11 +32,11 @@
                     <span>En plein centre-ville ou en pleine nature</span>
                 </div>
                 
-                <form action="" class="searchbar">
+                <form action="/api/search/location" class="searchbar">
                     <span class="searchbar-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
-                    <input class="searchbar-input" name="searchinput" value="Marseille, France" type="text" />
+                    <input class="searchbar-input" name="searchinput" value="Marseille, France" type="text">
                     <button type="submit" class="searchbar-button searchbar-button-icon d-none d-mobile"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
-                    <button type="submit" class="searchbar-button searchbar-button-text d-none-mobile"><h3>Rechercher</h3></button>
+                    <button type="submit" class="searchbar-button searchbar-button-text d-none-mobile">Rechercher</button>
                 </form>
 
                 <div class="filter">
